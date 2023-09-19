@@ -37,12 +37,12 @@ int main() {
 
     printf("You spot a shiny object in the distance..\n");
     printf("Will you check it out?\n'y' or 'n'");
-    scanf("%c",&ask);
+    scanf(" %c", &ask);
     if(ask=='y'){
         coin += 5, health -= 1;
-        printf("You stub your toe on your way therefore losing 1 health\n");
+        printf("\nYou stub your toe on your way therefore losing 1 health\n");
         printf("When you arrive you discover that the shiny object was a pearl!\n");
-        printf("You have %d healthpoints left.. But you now have %d coins!",health, coin);
+        printf("You have %d health points left.. But you now have %d coins!",health, coin);
     }
     else if(ask=='n') {
         printf("You continue on your path\n");
